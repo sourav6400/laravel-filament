@@ -1,12 +1,14 @@
 <?php
 
-namespace App\Filament\Resources\CustomerResource\Widgets;
+namespace App\Filament\Widgets;
 
-use Filament\Widgets\StatsOverviewWidget as BaseWidget;
 use Filament\Widgets\StatsOverviewWidget\Card;
+use Filament\Widgets\Widget;
 
-class StatsOverview extends BaseWidget
+class ChartsOverview extends Widget
 {
+    protected static string $view = 'filament.widgets.charts-overview';
+
     protected function getCards(): array
     {
         return [
